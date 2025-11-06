@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali Linux - Elite Security Platform</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js.js">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="circuit circuit-1"></div>
+        <div class="circuit circuit-2"></div>
+        <div class="circuit circuit-3"></div>
+        <div class="circuit circuit-4"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo-wrapper">
+                    <img src="logo.png" alt="Kali Linux Logo" class="logo-img">
+                </div>
+                <span class="logo-text">Kali Linux</span>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre Kali</a></li>
+                <li><a href="#instalacion">Instalación</a></li>
+                <li><a href="#video">Tutorial</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-badge">Elite Security Platform</div>
+            <h1>KALI LINUX</h1>
+            <p class="hero-subtitle">La Distribución Definitiva para Profesionales en Ciberseguridad y Ethical Hacking</p>
+            
+            <div class="cta-buttons">
+                <a href="#instalacion" class="btn btn-primary">Comenzar Instalación</a>
+                <a href="#video" class="btn btn-secondary">Ver Tutorial</a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-image">
+                  <img src="kall.png" alt="Imagen principal" style="width: 100%; height: auto;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+   <br> 
+
+    <!-- Stats -->
+    <div class="stats">
+        <div class="stat-card">
+            <div class="stat-number">600+</div>
+            <div class="stat-label">Herramientas de Seguridad</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Código Abierto</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Soporte Comunitario</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Posibilidades</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Features Section -->
+        <section class="section" id="sobre">
+            <div class="section-header">
+                <h2 class="section-title">¿Qué es Kali Linux?</h2>
+                <p class="section-subtitle">Una plataforma avanzada de testing de penetración y auditoría de seguridad basada en Debian, diseñada para profesionales</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Pentesting Avanzado</h3>
+                    <p class="feature-desc">Más de 600 herramientas preinstaladas para pruebas de penetración, análisis de vulnerabilidades y auditorías de seguridad completas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Rendimiento Óptimo</h3>
+                    <p class="feature-desc">Sistema operativo optimizado para máxima eficiencia en análisis de redes, escaneo y operaciones de seguridad intensivas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3 class="feature-title">Totalmente Personalizable</h3>
+                    <p class="feature-desc">Configura cada aspecto del sistema según tus necesidades específicas. Múltiples entornos de escritorio y herramientas modulares.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">Comunidad Global</h3>
+                    <p class="feature-desc">Respaldado por millones de profesionales de seguridad en todo el mundo. Documentación extensa y soporte activo de la comunidad.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">Rolling Release</h3>
+                    <p class="feature-desc">Actualizaciones continuas sin reinstalación. Siempre tendrás las últimas herramientas y parches de seguridad disponibles.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Multi-Plataforma</h3>
+                    <p class="feature-desc">Compatible con x86, x64, ARM y dispositivos como Raspberry Pi. Lleva tu laboratorio de seguridad a cualquier lugar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Installation Steps -->
+        <section class="section" id="instalacion">
+            <div class="section-header">
+                <h2 class="section-title">Guía de Instalación</h2>
+                <p class="section-subtitle">Sigue estos pasos detallados para una instalación exitosa de Kali Linux en tu sistema</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">01</div>
+                        <h3 class="step-title">Requisitos del Sistema</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Verifica que tu hardware cumpla con los requisitos mínimos para ejecutar Kali Linux:</p>
+                        <ul>
+                            <li><strong>Procesador:</strong> CPU de 64-bit Intel o AMD (mínimo 1 GHz, dual-core recomendado)</li>
+                            <li><strong>Memoria RAM:</strong> 2 GB mínimo (4 GB o más recomendado para uso intensivo)</li>
+                            <li><strong>Almacenamiento:</strong> 20 GB de espacio libre (50 GB+ recomendado para herramientas adicionales)</li>
+                            <li><strong>USB:</strong> Pendrive de 8 GB o superior para crear el medio de instalación</li>
+                            <li><strong>Conexión a Internet:</strong> Para descargas y actualizaciones posteriores</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">02</div>
+                        <h3 class="step-title">Descargar Kali Linux</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Obtén la imagen ISO oficial desde el sitio web de Kali:</p>
+                        <ul>
+                            <li>Visita el sitio oficial: <a href="https://www.kali.org/get-kali/" target="_blank" style="color: #00bfff; text-decoration: none;">https://www.kali.org/get-kali/</a></li>
+                            <li>Selecciona la edición adecuada (Installer, Live, NetInstaller)</li>
+                            <li>Descarga la versión de 64-bit para máximo rendimiento</li>
+                            <li>Verifica la integridad con el hash SHA256 proporcionado</li>
+                            <li>Tamaño aproximado: 3-4 GB dependiendo de la versión</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">03</div>
+                        <h3 class="step-title">Crear USB Booteable</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Prepara tu medio de instalación con una herramienta profesional:</p>
+                        <ul>
+                            <li>Descarga <strong>Rufus</strong> (Windows), <strong>balenaEtcher</strong> (multiplataforma) o <strong>dd</strong> (Linux)</li>
+                            <li>Conecta tu USB (ADVERTENCIA: se borrará todo su contenido)</li>
+                            <li>Selecciona la imagen ISO de Kali Linux descargada</li>
+                            <li>Configura el esquema de partición: <code>GPT</code> para UEFI o <code>MBR</code> para BIOS Legacy</li>
+                            <li>Sistema de archivos: <code>FAT32</code> recomendado</li>
+                            <li>Inicia la grabación y espera a que finalice el proceso</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">04</div>
+                        <h3 class="step-title">Configurar BIOS/UEFI</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Configura tu sistema para arrancar desde el USB:</p>
+                        <ul>
+                            <li>Reinicia tu computadora completamente</li>
+                            <li>Presiona la tecla de acceso al BIOS: <code>F2</code>, <code>F10</code>, <code>F12</code>, <code>DEL</code> o <code>ESC</code> (depende del fabricante)</li>
+                            <li>Navega a la sección "Boot" o "Arranque"</li>
+                            <li>Coloca el USB como primera opción de arranque</li>
+                            <li>Si usas UEFI, desactiva <strong>Secure Boot</strong> temporalmente</li>
+                            <li>Guarda los cambios (<code>F10</code>) y reinicia</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">05</div>
+                        <h3 class="step-title">Iniciar Instalación</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Comienza el proceso de instalación de Kali Linux:</p>
+                        <ul>
+                            <li>El sistema arrancará desde el USB mostrando el menú de Kali</li>
+                            <li>Selecciona <strong>"Graphical Install"</strong> para una experiencia visual intuitiva</li>
+                            <li>Elige tu <strong>idioma</strong> preferido (Español disponible)</li>
+                            <li>Selecciona tu <strong>ubicación geográfica</strong> para configuración de zona horaria</li>
+                            <li>Configura la <strong>distribución del teclado</strong> (Español Latinoamérica o España)</li>
+                            <li>Espera mientras el sistema detecta el hardware</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">06</div>
+                        <h3 class="step-title">Configuración de Red y Usuario</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Establece la identidad de tu sistema:</p>
+                        <ul>
+                            <li><strong>Nombre del equipo:</strong> Define un hostname (ej: kali-lab, security-station)</li>
+                            <li><strong>Dominio:</strong> Déjalo en blanco si no estás en una red corporativa</li>
+                            <li><strong>Nombre completo del usuario:</strong> Tu nombre o alias</li>
+                            <li><strong>Nombre de usuario:</strong> Para inicio de sesión (evita usar "kali" o "root")</li>
+                            <li><strong>Contraseña:</strong> Crea una contraseña FUERTE y segura (mínimo 12 caracteres, mayúsculas, minúsculas, números y símbolos)</li>
+                            <li>Confirma la contraseña correctamente</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">07</div>
+                        <h3 class="step-title">Particionado del Disco</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Configura el almacenamiento según tus necesidades:</p>
+                        <ul>
+                            <li><strong>Guiado - usar el disco completo:</strong> Opción más simple, recomendada para principiantes</li>
+                            <li><strong>Guiado - usar el disco completo con LVM:</strong> Ofrece flexibilidad para redimensionar particiones</li>
+                            <li><strong>Guiado - cifrado LVM:</strong> Máxima seguridad, cifra todo el disco</li>
+                            <li><strong>Manual:</strong> Control total para usuarios avanzados</li>
+                            <li>Esquema recomendado: <code>/</code> (raíz), <code>/home</code> separado, <code>swap</code></li>
+                            <li>Confirma los cambios y procede con el formateo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">08</div>
+                        <h3 class="step-title">Instalación del Sistema</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Selecciona las herramientas y entorno de escritorio:</p>
+                        <ul>
+                            <li><strong>Entorno de escritorio:</strong> Xfce (ligero), KDE (completo), GNOME (moderno)</li>
+                            <li><strong>Colecciones de herramientas:</strong> Top 10, Default, Large, Everything</li>
+                            <li>Instalación estándar incluye: Metasploit, Nmap, Wireshark, Burp Suite, etc.</li>
+                            <li>El proceso de instalación tomará 15-30 minutos</li>
+                            <li>No interrumpas el proceso</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">09</div>
+                        <h3 class="step-title">Configuración Final y Primer Arranque</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Completa la instalación y arranca tu nuevo sistema:</p>
+                        <ul>
+                            <li>Instala el <strong>cargador de arranque GRUB</strong> cuando se solicite</li>
+                            <li>Selecciona el disco principal (usualmente <code>/dev/sda</code> o <code>/dev/nvme0n1</code>)</li>
+                            <li>Espera la finalización de la configuración</li>
+                            <li>Retira el USB cuando el sistema te lo indique</li>
+                            <li>Reinicia el sistema</li>
+                            <li>¡Inicia sesión con tu usuario y contraseña!</li>
+                            <li>Actualiza el sistema: <code>sudo apt update && sudo apt upgrade -y</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="section" id="video">
+            <div class="video-section">
+                <div class="section-header">
+                    <h2 class="section-title">Tutorial en Video</h2>
+                    <p class="section-subtitle">Guía visual paso a paso de todo el proceso de instalación</p>
+                </div>
+
+                <div class="video-wrapper">
+                    <div class="video-placeholder">
+                        <video width="840" height="472" controls>
+                         <source src="tuto.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="section" id="recursos">
+            <div class="section-header">
+                <h2 class="section-title">Recursos</h2>
+                <p class="section-subtitle">ecursos adicionales para tu aprendizaje</p>
+            </div>
+
+
+            <div style="margin-top: 4rem; padding: 3rem; background: rgba(10, 14, 39, 0.6); backdrop-filter: blur(20px); border-radius: 20px; border: 1px solid rgba(54, 123, 240, 0.2);">
+                <h3 style="font-family: 'Orbitron', sans-serif; font-size: 2rem; color: var(--primary); margin-bottom: 2rem;">Primeros Pasos Post-Instalación</h3>
+                <p style="color: rgba(224, 242, 254, 0.8); margin-bottom: 1rem; font-size: 1.1rem;">Una vez completada la instalación, ejecuta estos comandos esenciales:</p>
+                <ul style="margin: 1.5rem 0; padding-left: 2rem; color: rgba(224, 242, 254, 0.7); line-height: 2;">
+                    <li><code>sudo apt update && sudo apt upgrade -y</code> - Actualizar el sistema completo</li>
+                    <li><code>sudo apt install -y kali-linux-large</code> - Instalar conjunto extendido de herramientas</li>
+                    <li><code>sudo apt install -y kali-desktop-xfce</code> - Instalar entorno de escritorio adicional</li>
+                    <li><code>sudo systemctl enable ssh</code> - Habilitar acceso SSH</li>
+                    <li><code>sudo ufw enable</code> - Activar firewall</li>
+                </ul>
+
+                <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.8rem; color: var(--secondary); margin: 2.5rem 0 1.5rem;">Enlaces Oficiales Útiles</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                    <div style="padding: 1.5rem; background: rgba(54, 123, 240, 0.1); border-radius: 10px; border: 1px solid rgba(54, 123, 240, 0.3);">
+  <p style="color: var(--light); font-weight: 600; margin-bottom: 0.5rem;">📚 Documentación Oficial</p>
+  <p style="color: #00bfff; font-size: 0.95rem;">
+    <a href="https://kali.org/docs" target="_blank" style="color: #00bfff; text-decoration: none;">kali.org/docs</a>
+  </p>
+</div>
+
+<div style="padding: 1.5rem; background: rgba(54, 123, 240, 0.1); border-radius: 10px; border: 1px solid rgba(54, 123, 240, 0.3);">
+  <p style="color: var(--light); font-weight: 600; margin-bottom: 0.5rem;">💬 Foros de Comunidad</p>
+  <p style="color: #00bfff; font-size: 0.95rem;">
+    <a href="https://forums.kali.org" target="_blank" style="color: #00bfff; text-decoration: none;">forums.kali.org</a>
+  </p>
+</div>
+
+<div style="padding: 1.5rem; background: rgba(54, 123, 240, 0.1); border-radius: 10px; border: 1px solid rgba(54, 123, 240, 0.3);">
+  <p style="color: var(--light); font-weight: 600; margin-bottom: 0.5rem;">🎓 Entrenamiento</p>
+  <p style="color: #00bfff; font-size: 0.95rem;">
+    <a href="https://kali.training" target="_blank" style="color: #00bfff; text-decoration: none;">kali.training</a>
+  </p>
+</div>
+
+<div style="padding: 1.5rem; background: rgba(54, 123, 240, 0.1); border-radius: 10px; border: 1px solid rgba(54, 123, 240, 0.3);">
+  <p style="color: var(--light); font-weight: 600; margin-bottom: 0.5rem;">💻 GitHub Oficial</p>
+  <p style="color: #00bfff; font-size: 0.95rem;">
+    <a href="https://github.com/offensive-security" target="_blank" style="color: #00bfff; text-decoration: none;">github.com/offensive-security</a>
+  </p>
+</div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">KALI LINUX</div>
+            <p class="footer-text">Distribución Profesional de Seguridad Informática</p>
+            <p class="footer-text">Basado en Debian | Desarrollado por Offensive Security</p>
+            
+            <div class="footer-credits">
+                Desarrollado por: <strong>Marvin Josue Borja Hurtado</strong> | Sección 2-13
+            </div>
+
+            <div class="footer-warning">
+                ⚠️ <strong>ADVERTENCIA IMPORTANTE:</strong> Kali Linux contiene herramientas potentes diseñadas para profesionales de seguridad. 
+                Estas herramientas deben utilizarse ÚNICAMENTE de manera ética y legal. Solo realiza pruebas de penetración en sistemas 
+                para los cuales tienes autorización explícita. El uso indebido puede resultar en consecuencias legales graves.
+            </div>
+
+            <p class="footer-text" style="margin-top: 2rem; font-size: 0.9rem;">
+                © 2025 - Todos los derechos reservados | Proyecto Educativo
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
